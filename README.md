@@ -15,8 +15,6 @@ This component is the baseline. It is using the common implementation of `IS3Ser
 
 The S3 module registers the implementation using `TryAddTransient` so that it can be registered idempotently. **TODO: it should probably verify another implementation isn't registered instead.**
 
-```csharp
-
 ### [`SampleApp.ComponentUsingDifferentInterface`](./SampleApp.ComponentUsingDifferentInterface.Internal/DependencyInjectionExtensions.cs)
 This component is using a sub-classed interface of `IS3Service` and the custom implementation of the S3 interface is registered against that.
 
